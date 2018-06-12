@@ -1,0 +1,33 @@
+{
+  "name": "debateteamsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adwaywadekar/DebateTeamSite.git"
+  },
+  "author": "Adway S. Wadekar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adwaywadekar/DebateTeamSite/issues"
+  },
+  "homepage": "https://github.com/adwaywadekar/DebateTeamSite#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-sanitizer": "^1.0.4",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "method-override": "^2.3.10",
+    "mongoose": "^5.1.5",
+    "nodemailer": "^4.6.6",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}
