@@ -1,14 +1,14 @@
 // APP CONFIG
 const express = require('express'),
-    app = express(),
-    bodyParser = require('body-parser'),
-    nodemailer = require('nodemailer'),
-    mongoose = require('mongoose'),
-    expressSanitizer = require('express-sanitizer'),
-    methodOverride = require('method-override'),
-    flash = require('connect-flash'),
-    passport = require('passport'),
-    LocalStrategy = require('passport-local');
+  app = express(),
+  bodyParser = require('body-parser'),
+  nodemailer = require('nodemailer'),
+  mongoose = require('mongoose'),
+  expressSanitizer = require('express-sanitizer'),
+  methodOverride = require('method-override'),
+  flash = require('connect-flash'),
+  passport = require('passport'),
+  LocalStrategy = require('passport-local');
 
 // ROUTE INCLUDES
 const indexRoutes = require('./routes/index');
@@ -33,11 +33,12 @@ app.use(methodOverride('_method'));
 // Use Flash Messaging
 app.use(flash());
 
-// SERVER CONFIG
-app.listen(3000, function() {
-    console.log('Server has started');
+// ROUTES
+app.get('/', (req, res) => {
+  res.render('home');
 });
 
-
-// ROUTES
-app.use("/", indexRoutes);
+// SERVER CONFIG
+app.listen(3000, function() {
+  console.log('Server has started');
+});
