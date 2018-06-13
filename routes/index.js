@@ -8,4 +8,11 @@ router.get('/', (req, res) => {
   });
 });
 
+router.get('/officers', (req, res) => {
+  res.render('officers', {
+    title: 'Westborough High School Debate Team | Officers',
+    page_name: 'Officers'
+  });
+});
+
 module.exports = router;

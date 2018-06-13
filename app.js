@@ -34,9 +34,7 @@ app.use(methodOverride('_method'));
 app.use(flash());
 
 // ROUTES
-app.get('/', (req, res) => {
-  res.render('home');
-});
+app.use('/', indexRoutes);
 
 // SERVER CONFIG
 app.listen(3000, function() {
