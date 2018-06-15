@@ -1,5 +1,31 @@
 <% include partials/header %>
 
-<h1>Officers</h1>
 
-<% include partials/footer %> 
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Our Officers</h1>
+  </div>
+</div>
+
+
+<div class="container marketing">
+
+<!-- Three columns of text below the carousel -->
+<div class="row">
+<% officers.forEach((officer) => { %>
+
+<div class="col-lg-4">
+<img class="rounded-circle" src="<%= officer.image %>" alt="<%= officer.name %>" width="140" height="140">
+<h2><%= officer.name %></h2>
+<h4><%= officer.position %></h4>
+
+<p><%= officer.bio %></p>
+</div><!-- /.col-lg-4 -->
+
+<% }) %>
+
+</div><!-- /.row -->
+
+
+
+<% include partials/footer %>

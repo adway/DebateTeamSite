@@ -21,9 +21,17 @@
     </div>
 
     <div class="row">
-    <div class="col-md-12">
-    <h2>Calendar:</h2>
-    </div>  
+    <h2>Announcements:</h2>
+    <% announcements.forEach(function(announcement){ %>
+      <div class="col-md-12">
+        <h3><%= announcement.event %></h3>
+        <h5><%= announcement.date %></h5>
+        <% if (announcement.description != null) { %>
+        <p class="standard"><%- announcement.description %> </p>
+        <% } %>
+      
+      </div>
+    <% }) %>
     </div>
 
 
